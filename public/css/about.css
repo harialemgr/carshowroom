@@ -1,0 +1,230 @@
+.abc {
+    padding-top: 94px;
+    margin-top: 50px;
+    padding-bottom: 60px;
+    font-size: 50px;
+    color: #14a0f8;
+    background: white;
+    text-align: center;
+}
+
+.abc .heading1 {
+    font-family: inherit;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0px;
+}
+
+.abc .hd {
+    font-family: inherit;
+    font-size: 45px;
+    line-height: 65px;
+    font-weight: 300 !important;
+    text-transform: uppercase;
+    color: #14a0f8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about {
+    padding-top: 20px;
+    margin-top: 0px;
+    padding-bottom: 60px;
+    font-size: 20px;
+    color: #14a0f8;
+    background: white;
+    font-family: inherit;
+}
+
+.about .hd {
+    font-family: inherit;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300 !important;
+    color: #14a0f8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.about p {
+    font-family: raleway, sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    color: #888;
+    font-weight: 300 !important;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 34px;
+}
+
+#parallex {
+    margin-top: 25px;
+    /* height: 700px; */
+    background-image: url("../assets/parallax2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.parallex1 {
+    font-size: 80px;
+    font-weight: 700;
+    padding-top: 120px;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.parallex2 {
+    font-size: 65px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.parallex3 {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.btnreadmore {
+    background-color: #E2821E;
+    height: 75px;
+    width: 275px;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 750;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-family: sans-serif;
+}
+
+.btnreadmore:hover {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+.team {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px !important;
+    padding-top: 100px;
+    color: #333;
+}
+
+.card .card-title {
+    font-family: inherit;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 320;
+}
+
+.card .card-text {
+    font-family: inherit;
+    font-size: 20px;
+
+}
+
+.serve {
+    background:  #E2821E;
+}
+
+.services {
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 60px;
+    font-size: 50px;
+    color: whitesmoke;
+    background:  #E2821E;
+    text-align: center;
+}
+
+.services .heading1 {
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-top: 0px;
+    padding-bottom: 30px;
+}
+
+.services .hd {
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-top: 0px;
+
+}
+
+.security {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    text-align: left;
+
+}
+
+.s1 {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    color: whitesmoke;
+    /* font-weight: 100 !important; */
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    padding-bottom: 0px;
+
+}
+
+.read {
+    background: white;
+    padding-bottom: 0px;
+}
+
+.rdm1 {
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 650;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 100px;
+    background: white;
+    margin-bottom: 40px;
+}
+
+.rdmp {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 300 !important;
+    color: #888;
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 00px;
+    padding-bottom: 0px;
+    line-height: 34px;
+
+}

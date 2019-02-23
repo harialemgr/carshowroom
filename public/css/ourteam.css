@@ -1,0 +1,36 @@
+.card-body .card-title{
+    color:#14a0f8;
+    font-size:30px;
+}
+
+.card-body .card-text{
+    color:#888;
+    font-size:20px;
+}
+
+.card{
+    margin-top:50px;
+}
+
+.blockquote{
+    color:#888;
+    margin-top:100px;
+}
+
+.person{
+    color:#14a0f8;
+    font-size:30px;
+    margin-top:30px;
+}
+
+.quote{
+    background-color:#14a0f8;
+    font-size:30px;
+    color:white;
+    height:100px;
+    width:100px;
+    margin-bottom:50px;
+    border-radius:100%;
+    padding-top:35px;
+    
+}

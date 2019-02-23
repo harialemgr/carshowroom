@@ -1,0 +1,19 @@
+.list-group-item{
+    margin:10px;
+    background-color:#E2821E;
+    color:white;
+}
+.list-group-item:hover{
+    background-color:yellow;
+    color:black;
+}
+
+.apply{
+    margin:50px;
+}
+
+.upload{
+    font-size:20px;
+    color:#888;
+    margin-top:30px;
+}
