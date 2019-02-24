@@ -57,7 +57,7 @@ Route::post('/customerquery', 'CustomerQueryController@store')->name('customerqu
 Route::get('/career/{career}', 'CareerController@show')->name('career.show');
 Route::post('/apply-for-vacancy/store', 'ApplyForVacancyController@store')->name('appliedvacancy.store');
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/prices', 'PagesController@price')->name('prices');
@@ -83,4 +83,3 @@ Route::get('/blogs/{slug}', ['as' => 'frontend.blogview', 'uses' => 'HomeControl
 Route::get('/support/{slug}', 'HomeController@support')->name('support');
 
 Route::get('/demo', 'HomeController@demo')->name('demo');
-Route::get('/index', 'HomeController@index')->name('home');

@@ -102,6 +102,7 @@ $( document ).ready(function() {
        <script src="{{ asset('js/jquery.js') }}"></script>
        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
        <script src="{{ asset('js/owljquery.js') }}"></script>
+       <script src="{{ asset('parallax.min.js') }}"></script>
 
     
 

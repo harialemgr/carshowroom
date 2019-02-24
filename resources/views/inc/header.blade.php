@@ -9,12 +9,12 @@
 
   <span class="flex-item1" id="text">
 
-  {{$adminprofile->status}}   
-  
+  {{-- {{$adminprofile->status}}    --}}
+    CALL NOW |
   <!-- 7 DAYS A WEEK FROM 8:00 AM TO 9:00 AM -->
   </span>
   <span class="flex-item2" id="text1">
-      <i class="fa fa-phone fa-flip-horizontal" style="color:#0074B1;"></i>&nbsp;  {{$adminprofile->phno}}   
+    &nbsp;{{$adminprofile->phno}}   
   
   </span>
 

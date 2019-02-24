@@ -22,7 +22,7 @@
                 </button>
 
                   <a class="navbar-brand" href="{{route('home')}}" id="l">
-                        <img id="vntetwork-logo" type="image" src="{{ $adminprofile->logo != '' ? asset('storage/logo/'.$adminprofile->logo) : asset('/storage/logo/noimage.png')}}" height="80px">
+                        <img id="vntetwork-logo" type="image" src="{{ $adminprofile->logo != '' ? asset('storage/logo/'.$adminprofile->logo) : asset('/storage/logo/noimage.png')}}" height="70px">
                         {{-- <span id='internet'>internet</span><span id="provider">provider</span> --}}
                   </a>
                   </span>
@@ -54,7 +54,7 @@
                       <a class="nav-link" href="{{route('blogs')}}">BLOG</a>
                     </li>
                     <li class="nav-item  {{ request()->is('contact*') ? 'active1' : '' }}">
-                      <a class="nav-link" href="{{route('contact')}}">CONTACTS</a>
+                      <a class="nav-link" href="#contact">CONTACTS</a>
                     </li>
                 </ul>
         </div>  
@@ -75,19 +75,31 @@
  $social_links = App\Http\Controllers\HomeController::getSocialLinks();
  
 @endphp
-<div class="container-fluid" style="background-color:white; padding-top:100px; padding-bottom:100px;">
-    <div class="row">
+<div class="container-fluid" style="background-color:black; padding-top:100px; padding-bottom:100px;" id="contact">
+    {{-- <div class="row">
         <div class="col-sm-6 offset-md-4 footerImage">
             <img src="{{ $adminprofile->logo != '' ? asset('/storage/logo/'.$adminprofile->logo) : asset('/storage/logo/noimage.png')}}" height="150px" width="400px">
         </div>
+    </div> --}}
+
+      <div class="row map" style="align:center;margin-top:0px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14139.82364478003!2d83.491024!3d27.6258821!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1544594680381" width="100%" height="250px" frameborder="0" id="map" style="border:0" allowfullscreen></iframe>
     </div>
+
     <div class="row footer">
         <div class="col-md-4">
             <div class="footer-icons">
             <p><i class="fas fa-map-marker-alt"></i> &nbsp;Address</p>
             </div>
             <div class="footer-text">
-                <p>{{ $head_branch->address }}</p>
+                <p>
+                @if(isset($head_branch->address))
+                {{ $head_branch->address }}
+                @else
+                 Butwal,Nepal
+                @endif
+                
+                </p>
             </div>
         </div>
         <div class="col-md-4">
@@ -95,8 +107,16 @@
             <p><i class="fas fa-phone fa-flip-horizontal"></i> &nbsp;Telephones</p>
             </div>
             <div class="footer-text">
-                <p>{{ $head_branch->contact }}</p>
+
+                <p>
+                @if(isset($head_branch->contact))
+                {{ $head_branch->contact }}
+                @else
+              +9779847000000
+                @endif
+                </p>
             </div>
+
         </div>
         <div class="col-md-4">
            <div class="footer-icons">
