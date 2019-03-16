@@ -69,14 +69,14 @@
                     </li>
                                       
                   <li class="nav-item"><a href="{{route('car.index')}}" class="nav-link"><i class="nav-icon fa fa-th"></i><p>Cars Collection {{-- <span class="right badge badge-danger">New</span>--}}</p></a></li>
-                <li class="nav-item"><a href="{{route('customerquery.index')}}" class="nav-link"><i class="nav-icon fa fa-inbox"></i><p>Queries / Feedbacks </p></a></li>
-                    <li class="nav-item"><a href="{{route('social_links.index')}}" class="nav-link"><i class="nav-icon fa fa-link "></i><p>Social Links</p></a></li>
+                {{-- <li class="nav-item"><a href="{{route('customerquery.index')}}" class="nav-link"><i class="nav-icon fa fa-inbox"></i><p>Queries / Feedbacks </p></a></li>
+                    <li class="nav-item"><a href="{{route('social_links.index')}}" class="nav-link"><i class="nav-icon fa fa-link "></i><p>Social Links</p></a></li>  --}}
                <li class="nav-item has-treeview"><a href="#" class="nav-link"><i class="nav-icon fas fa-info-circle"></i></i><p>More<i class="right fa fa-angle-left"></i></p></a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item"><a href="{{route('page.create')}}" class="nav-link"><i class="fa fa-circle-o nav-icon"></i><p>Add New Description</p></a></li>
                             <li class="nav-item"><a href="{{route('page.index')}}" class="nav-link"><i class="fa fa-circle-o nav-icon"></i><p>All Descriptions</p></a></li>
                         </ul>
-                    </li> 
+                    </li>
                     {{-- <li class="nav-item"><a href="{{route('appliedvacancy.index')}}" class="nav-link"><i class="nav-icon fas fa-user-tag "></i><p>Applied For Vacancies</p></p></a></li>
  --}}
 

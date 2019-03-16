@@ -48,14 +48,14 @@
     </div>
   </div>
   <div class="row">
-  {{-- @foreach ($our_services as $service)
+  @foreach ($our_services as $service)
     <div class="col-md-4">
       <h4 class="security"><b>{{ $service->title }}</b></h4>
       <p class="s1" >{{ str_replace(array('<p>','</p>'), '',$service->description) }}</p>
     </div> 
-  @endforeach --}}
+  @endforeach
 
-    <div class="col-md-4">
+    {{-- <div class="col-md-4">
       <h4 class="security"><b>Software Development</b></h4>
       <p class="s1">Whether you have a start-up project to launch, an idea for a custom software solution for your company, or you are engaged in software product development, Internet Provider is ready to provide full-cycle software development services at each stage of your project.</p>
     </div>  
@@ -66,7 +66,7 @@
       <div class="col-md-4">
       <h4 class="security"><b>Technology Consulting</b></h4>
       <p class="s1">Security breaches are on the rise, and it’s not just large organizations that are being targeted. All businesses must take measures to protect their networks and sensitive information from threats, vulnerabilities, and malicious attacks. Our IT security team will work with you to identify and manage your risk.</p>
-    </div>  
+    </div>   --}}
   </div>
 </div>
 </div>

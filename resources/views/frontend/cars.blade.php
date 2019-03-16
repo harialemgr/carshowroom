@@ -30,6 +30,6 @@
               
         </div>
 </div>
-
+<hr>
  
 @endsection

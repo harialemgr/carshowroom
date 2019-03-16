@@ -39,6 +39,8 @@ class HomeController extends Controller
         $cars = Car::orderBy('created_at','desc')->take(4)->get();
         $adminprofile = AdminProfile::first();
         $footer = FooterSetting::first();
+        
+        $our_services = OurService::all();
         // dd($cars);
         // dd($footer);
         if(!isset($_GET['key'])){
@@ -49,7 +51,7 @@ class HomeController extends Controller
             
         $cars1 = Car::orderBy('created_at','desc')->get();
         }
-        return view('frontend.index')->with(compact('footer','cars','cars1','adminprofile','category_id', 'slider_images', 'testimonials', 'pricings'));
+        return view('frontend.index')->with(compact('footer','cars','cars1','adminprofile','category_id', 'slider_images', 'testimonials', 'pricings','our_services'));
         // return view('frontend.index')->with(compact('category_id','testimonials'));
     }
 

@@ -15,18 +15,10 @@
 
             </div>
             <div class="card-body">
-      <form action="/adminprofile/{{$adminprofile->id}}" method="post"  enctype="multipart/form-data">
-            @csrf
-            @method('PATCH')
-                <div class="row">
-                  <div class="form-group col-md-6">
-                      <label for="status">Enter status</label>
-                      <input name="status" type="text" value="{{$adminprofile->status}}"" class="form-control" id="status">
-                      @if($errors->has('status'))
-                        <span style="color:red">{{ $errors->first('status') }} </span>
-                     @endif
-                  </div>
-                  <div class="col-md-2">
+
+
+
+                    <div class="col-md-2">
                    <label style="visibility:hidden">fadfafa</label><br>
                   <a href="{{route('wallpaper.index')}}" class="btn btn-primary" title="change and manage wallpaper">wallpaper</a></div>
                   
@@ -35,6 +27,15 @@
                    <label style="visibility:hidden">fadfafa</label><br>
                   <a href="{{route('footersetting.edit',1)}}" class="btn btn-primary" title="Change Footer Setting">Footer Setting</a></div>
                   </div>
+               
+
+{{-- 
+
+      <form action="/adminprofile/{{$adminprofile->id}}" method="post"  enctype="multipart/form-data">
+            @csrf
+            @method('PATCH')
+                <div class="row">
+              
                   <div class="form-group col-md-6">
                       <label for="phno">Enter Phone Number on status</label>
                       <input name="phno" type="text" value="{{$adminprofile->phno}}" class="form-control" id="phno">
@@ -45,61 +46,13 @@
 
 
 
-          <div class="form-group col-md-6">
-              <label>Logo</label>
-              
-              <div class="input-group">
-    
-                  <div class="custom-file">
-                      <input class="custom-file-input imagechk" id="image" name="logo" value="{{$adminprofile->logo}}" type="file">
-                      <label class="custom-file-label" for="exampleInputFile" id="imageink">New Logo</label>
-                  </div>
-              </div>
-          </div>
-
-
-          
-          <div class="form-group col-md-6">
-              <label>pop up picture</label>
-              
-              <div class="input-group">
-    
-                  <div class="custom-file">
-                      <input class="custom-file-input imagechk1" name="popup" value="{{$adminprofile->popup}}" type="file">
-                      <label class="custom-file-label" for="exampleInputFile" id="imageink1">New popup picture</label>
-                  </div>
-              </div>
-          </div>
-
-          <div class="form-group">
-          <label for="">Current Logo</label><br>
-          @if ("{{asset('/storage/logo/'.$adminprofile->logo }})")
-                     <img src="{{ asset('/storage/logo/'.$adminprofile->logo) }}" height="50px">
-              @else
-            <p>No image found</p>
-                 @endif
-
-          </div>
-          <div class="form-group">
-          <label for="">Current pop up picture</label><br>
-          @if ("{{asset('/storage/logo/'.$adminprofile->popup }})")
-                     <img src="{{ asset('/storage/logo/'.$adminprofile->popup) }}" height="50px">
-              @else
-            <p>No image found</p>
-                 @endif
-
-          </div>
-          
-                  <div id="image-content" hidden>
-                      <img id="blah" src="#" alt="your image" class="img-responsive" width="250" height="200" />
-                  </div>
-
+         
 
                   <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Update</button>
 
 
 
-              </form>
+              </form> --}}
 
               
               <br>

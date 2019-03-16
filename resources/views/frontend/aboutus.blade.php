@@ -73,13 +73,6 @@
   </div>
 </div> -->
 
-<div class="row" id="parallex">
-    <!-- <div class="col-lg-12"> -->
-      <div class="parallex1">your personal speed &</div>
-      <div class="parallex2"> quality home connection</div>
-      <div class="parallex3"><form action="{{ route('readmore') }}"><button type="submit" class="btnreadmore"><span>READ MORE</span></button></form></div>
-    <!-- </div> -->
-</div>
 
 <!-- <Team section -->
 <div class="container-fluid">
@@ -150,14 +143,6 @@
     </div> 
   @endforeach
 
-    {{-- <div class="col-md-4">
-      <h4 class="security"><b>Software Development</b></h4>
-      <p class="s1">Whether you have a start-up project to launch, an idea for a custom software solution for your company, or you are engaged in software product development, Internet Provider is ready to provide full-cycle software development services at each stage of your project.</p>
-    </div>  
-    <div class="col-md-4">
-      <h4 class="security"><b>Technology Consulting</b></h4>
-      <p class="s1">Security breaches are on the rise, and it’s not just large organizations that are being targeted. All businesses must take measures to protect their networks and sensitive information from threats, vulnerabilities, and malicious attacks. Our IT security team will work with you to identify and manage your risk.</p>
-    </div>   --}}
   </div>
 </div>
 </div>

@@ -115,8 +115,8 @@
             <div class="footer-text">
 
                 <p>
-                @if(isset($footer->contact))
-                {{ $footer->contact }}
+                @if(isset($footer->phno))
+                {{ $footer->phno }}
                 @else
               +9779847000000
                 @endif
