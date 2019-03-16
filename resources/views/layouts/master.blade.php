@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>{{ config('app_name','VNETWORK') }}</title>
+    <title>{{ config('app_name','SPEED&SINE') }}</title>
 <head>
     @yield('page-info')
     @yield('meta-content')

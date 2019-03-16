@@ -40,7 +40,7 @@
                       <a class="nav-link" href="{{route('blogs')}}">BLOG</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{{route('contact')}}">CONTACTS</a>
+                      <a class="nav-link" href="{{route('contact')}}">CONTACT</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{{route('contact')}}">{{ URL:: }}</a>

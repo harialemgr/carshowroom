@@ -11,6 +11,29 @@
     .invalid-input {
         color: red;
     }
+    .column {
+  float: left;
+  width: 33.33%;
+  margin: 5px;
+  padding:5px;
+}
+img.card-img-top{
+  
+}
+h4.card-title.column{
+  width:50%;
+}
+a.column{
+  width:5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
     </style>
     {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">

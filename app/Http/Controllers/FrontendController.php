@@ -22,6 +22,7 @@ use App\Career;
 use App\Calendar;
 use App\Video;
 use App\AdminProfile;
+use App\Car;
 
 
 class FrontendController extends Controller
@@ -246,5 +247,11 @@ class FrontendController extends Controller
         }
      
         return view('frontend.calendar',compact('college','member_categories','aboutus','calendar','m'));
+    }
+    public function allCars(){
+        
+            
+        $cars1 = Car::orderBy('created_at','desc')->get();
+        return view('frontend.cars')->with('cars1',$cars1);
     }
 }

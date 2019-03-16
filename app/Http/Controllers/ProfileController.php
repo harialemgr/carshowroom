@@ -115,12 +115,33 @@ class ProfileController extends Controller
      */
     public function update(Request $request,$id)
     { 
-        $this->validate($request,[
-            'status'=>'max:40',
-            'phno'=>'max:15',
+        
+        $profile = AdminProfile::find($id);
+        if(isset($_GET['topwallpaper'])){
+            $profile->topwallpaper = $_GET['topwallpaper'];
+            // dd($profile);
+            if($profile->save()){
+        
+                return redirect()->back()->with('successMsg','Updated Successfully');
+             }
+             else{
+                 
+                return redirect()->back()->with('failedMsg','Failed to Update');
+             }
             
-        ]);
-
+        }else if(isset($_GET['bottomwallpaper'])){
+            $profile->bottomwallpaper = $_GET['bottomwallpaper'];
+            // dd($profile);
+            if($profile->save()){
+        
+                return redirect()->back()->with('successMsg','Updated Successfully');
+             }
+             else{
+                 
+                return redirect()->back()->with('failedMsg','Failed to Update');
+             }
+        }
+        else{
       
         if($request->hasFile('logo')){ 
 
@@ -150,12 +171,12 @@ class ProfileController extends Controller
      }else{
          $fileNameToStore1 = 'noimage.png';
      }
-        $profile = AdminProfile::find($id);
         $profile->status = $request->status;
         $profile->phno = $request->phno;
         if($request->hasFile('logo')){
         $profile->logo = $fileNameToStore;
         }
+      
         if($request->hasFile('popup')){
             $profile->popup = $fileNameToStore1;
         }
@@ -167,6 +188,7 @@ class ProfileController extends Controller
              
             return redirect()->back()->with('failedMsg','Failed to Update');
          }
+        }
     }
 
     /**

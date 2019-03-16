@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+
+ Auth::routes();
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
@@ -40,7 +41,9 @@ Route::group(['middleware' => 'auth:web'], function () {
         'pricing' => 'PricingController',
         'branch' => 'BranchController',
         'ourservice' => 'OurServiceController',
-        'adminprofile' => 'ProfileController'
+        'adminprofile' => 'ProfileController',
+        'car' => 'CarController',
+        'footersetting' => 'FooterSettingController',
     ]);
 
     Route::resource('customerquery', 'CustomerQueryController', ['except' => ['store']]);
@@ -57,7 +60,7 @@ Route::post('/customerquery', 'CustomerQueryController@store')->name('customerqu
 Route::get('/career/{career}', 'CareerController@show')->name('career.show');
 Route::post('/apply-for-vacancy/store', 'ApplyForVacancyController@store')->name('appliedvacancy.store');
 
-Route::get('/', 'HomeController@index')->name('home');
+// Route::get('/', 'HomeController@index')->name('home');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/about', 'HomeController@about')->name('about');
 Route::get('/prices', 'PagesController@price')->name('prices');
@@ -75,7 +78,8 @@ Route::get('/careers', 'HomeController@careers')->name('careers');
 Route::get('/careers/{slug}', 'HomeController@careershow')->name('career.show');
 Route::get('/blogs', 'HomeController@blog')->name('blogs');
 Route::get('/blogview', 'HomeController@blogview')->name('blogview');
-
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/testimonials', 'HomeController@testimonials')->name('testimonials');
 Route::get('/blogs', 'HomeController@blog')->name('blogs');
 Route::get('/blogs/{slug}', ['as' => 'frontend.blogview', 'uses' => 'HomeController@blogview'])->name('blogview');
@@ -83,3 +87,7 @@ Route::get('/blogs/{slug}', ['as' => 'frontend.blogview', 'uses' => 'HomeControl
 Route::get('/support/{slug}', 'HomeController@support')->name('support');
 
 Route::get('/demo', 'HomeController@demo')->name('demo');
+Route::post('/getAllImage','HomeController@getAllImage');
+
+Route::get('cars','FrontendController@allCars')->name('cars');
+Route::resource('/wallpaper','WallpaperController');

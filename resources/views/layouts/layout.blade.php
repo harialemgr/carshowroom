@@ -1,8 +1,8 @@
 <!DOCTYPE html>
     <head>
 
-        <title> {{ config('app_name','VNETWORK') }}</title>
-        <link rel="shortcut icon" href="{{ asset('assets/vnet-favicon.png') }}" type="image/x-icon">
+        <title> {{ config('app_name','SPEED&SINE') }}</title>
+        {{-- <link rel="shortcut icon" href="#" type="image/x-icon"> --}}
         <style>
 *{
   margin:0;

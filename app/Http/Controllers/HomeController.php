@@ -16,13 +16,14 @@ use Illuminate\Support\Facades\DB;
 use App\slider;
 use App\Pricing;
 use App\AdminProfile;
-
+use App\Car;
+use App\FooterSetting;
 class HomeController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
     public function getCategoryId()
     {
         $category_id = page_category::whereName('Support')->pluck('id')->first();
@@ -35,9 +36,20 @@ class HomeController extends Controller
         $category_id = $this->getCategoryId();
         $slider_images = slider::wherePublish(1)->get();
         $pricings = Pricing::paginate(3);
-        
+        $cars = Car::orderBy('created_at','desc')->take(4)->get();
         $adminprofile = AdminProfile::first();
-        return view('frontend.index')->with(compact('adminprofile','category_id', 'slider_images', 'testimonials', 'pricings'));
+        $footer = FooterSetting::first();
+        // dd($cars);
+        // dd($footer);
+        if(!isset($_GET['key'])){
+            
+        $cars1 = Car::orderBy('created_at','desc')->take(4)->get();
+        }
+        else{
+            
+        $cars1 = Car::orderBy('created_at','desc')->get();
+        }
+        return view('frontend.index')->with(compact('footer','cars','cars1','adminprofile','category_id', 'slider_images', 'testimonials', 'pricings'));
         // return view('frontend.index')->with(compact('category_id','testimonials'));
     }
 
@@ -161,4 +173,9 @@ class HomeController extends Controller
         $adminprofile = AdminProfile::first();
         return $adminprofile;
     }
+    public function getAllImage(){
+        
+        $cars1 = Car::orderBy('created_at','desc')->get();
+        return response()->json(array('msg'=>$cars1));
+    } 
 }

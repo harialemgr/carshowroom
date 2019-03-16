@@ -1,20 +1,13 @@
 
 
-@media(max-width:700px){
 
-.footerImage img{
-
-padding-left:0px;
-width:0%;
-}
-}
 .footer-icons{
     font-size: 30px;
-    color:#E2821E;
+    color:#17a2b8;
 }
 
 .footer{
-    padding-top:100px;
+    padding-top:50px;
 }
 
 .footer .col-md-4{
@@ -44,3 +37,15 @@ width:0%;
     color:black;
 
 }
+.map{
+    padding-top:40px;
+}
+
+@media(max-width:700px){
+
+    .footerImage img{
+    
+    padding-left:0px;
+    width:0%;
+    }
+    }

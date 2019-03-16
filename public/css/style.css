@@ -11,14 +11,10 @@ body {
 
     margin: 0 !important;
     padding: 0;
+    color:white;
+    
 }
 
-body {
-
-
-    background-color: white;
-
-}
 #firstpic{
 background-image: url('/assets/images/car1.jpg');
 /* background-size: cover; */
@@ -28,6 +24,10 @@ background-repeat: no-repeat;
 /* background-color: turquoise; */
 min-height: 700px;
 
+}
+.parallax-window {
+	min-height: 700px;
+	background: transparent;
 }
 #secondpic{
     background-image: url('/assets/images/picture.jpg');
@@ -43,15 +43,17 @@ min-height: 700px;
 #text {
     text-align: right;
     color: white;
-    padding-top: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 #text1 {
-    padding-top: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     padding-right: 50px;
-    padding-left: 20px;
+    padding-left: 0px;
     font-size: 18px;
-    font-weight: bold;
+    
     color: white;
     font-family: sans-serif;
 }
@@ -485,6 +487,7 @@ min-height: 700px;
     padding-bottom: 0px;
     font-size: 48px;
     font-weight: 700;
+    color:red;
     font-family: sans-serif;
 }
 
@@ -593,12 +596,12 @@ strong {
 }
 
 .flex-container1 {
-    background-color: #E2821E;
+    background-color: black;
 }
 
 .flex-item1 {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media(min-width:900px) {
@@ -623,7 +626,7 @@ strong {
     }
 
     #text1 {
-        margin-left: 50px;
+        margin-left: 10px;
     }
 }
 
@@ -741,80 +744,8 @@ strong {
 
 
 
-.owl-carousel {
-    width: 100%;
 
 
-}
-
-.owl-carousel .item {
-    text-align: center;
-}
-
-.owl-carousel .item i {
-
-    
-    color: #E2821E;
-    background-color: #0074B1;
-
-}
-
-.owl-carousel .item h1 {
-
-    
-    text-transform: uppercase;
-    color: white;
-}
-
-.owl-carousel .item h3 {
-
-   
-    font-family: 'Raleway', sans-serif;
-    /* text-transform: uppercase; */
-    font-variant: small-caps;
-    color: whitesmoke;
-}
-
-.owl-carousel .item p {
-
-    padding-left:0px;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
-    text-align: center;
-}
-
-.owl-prev {
-    
-}
-
-.owl-next {
-    
-    position: relative;
-    left: 70px;
-}
-
-.owl-nav {
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-@media(max-width:768px){
-    div .item{
-        padding:0px;
-        margin:0px;
-    }
-    
-    
-    .owl-next {
-        
-        position: relative;
-        left: 10px;
-    }
-}
 @media(max-width:768px){
     .hover-div{
         display:none !important; 
@@ -927,7 +858,8 @@ input[type=number] {
 .map{
     padding-left: 15%;
     padding-right: 15%;
- 
+    
       }
+
 
       

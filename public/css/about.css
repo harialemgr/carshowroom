@@ -141,16 +141,16 @@
 }
 
 .serve {
-    background:  #E2821E;
+    background:cyan;
 }
 
 .services {
     padding-top: 50px;
-    margin-top: 50px;
+    margin-top: 0px;
     padding-bottom: 60px;
     font-size: 50px;
-    color: whitesmoke;
-    background:  #E2821E;
+    color: black;
+    background:  cyan;
     text-align: center;
 }
 
@@ -160,7 +160,7 @@
     font-weight: 600;
     line-height: 65px;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: black;
     margin-top: 0px;
     padding-bottom: 30px;
 }
@@ -170,7 +170,7 @@
     font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: black;
     margin-top: 0px;
 
 }
@@ -188,7 +188,7 @@
     font-size: 15px;
     line-height: 20px;
     text-align: justify;
-    color: whitesmoke;
+    color: black;
     /* font-weight: 100 !important; */
     display: block;
     /* margin-block-start: 1em;

@@ -2,15 +2,12 @@
 
 @php $adminprofile = App\Http\Controllers\HomeController::getGeneralSetting() @endphp
 
-    
+    <div class="flex-container1">
 
-
-<div class="flex-container1">
-
-  <span class="flex-item1" id="text">
+  <span class="flex-item1" id="text" style="margin-top:0px  ">
 
   {{-- {{$adminprofile->status}}    --}}
-    CALL NOW |
+   speed & shine autozone pvt.ltd.          CALL NOW |
   <!-- 7 DAYS A WEEK FROM 8:00 AM TO 9:00 AM -->
   </span>
   <span class="flex-item2" id="text1">

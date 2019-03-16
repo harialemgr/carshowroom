@@ -24,7 +24,8 @@
 
        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.4/dist/sweetalert2.all.min.js"></script>
@@ -72,6 +73,8 @@ body{
   text-align:center;
   color:#fff;
 }
+
+
 </style>
 
 <script>
@@ -102,7 +105,7 @@ $( document ).ready(function() {
        <script src="{{ asset('js/jquery.js') }}"></script>
        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
        <script src="{{ asset('js/owljquery.js') }}"></script>
-       <script src="{{ asset('parallax.min.js') }}"></script>
+       <script src="{{ asset('js/parallax.min.js') }}"></script>
 
     
 

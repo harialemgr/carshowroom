@@ -11,20 +11,29 @@
 
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Upadate Profile  </h3>
+                <h3 class="card-title">Update Profile  </h3>
 
             </div>
             <div class="card-body">
       <form action="/adminprofile/{{$adminprofile->id}}" method="post"  enctype="multipart/form-data">
             @csrf
             @method('PATCH')
-
+                <div class="row">
                   <div class="form-group col-md-6">
                       <label for="status">Enter status</label>
                       <input name="status" type="text" value="{{$adminprofile->status}}"" class="form-control" id="status">
                       @if($errors->has('status'))
                         <span style="color:red">{{ $errors->first('status') }} </span>
                      @endif
+                  </div>
+                  <div class="col-md-2">
+                   <label style="visibility:hidden">fadfafa</label><br>
+                  <a href="{{route('wallpaper.index')}}" class="btn btn-primary" title="change and manage wallpaper">wallpaper</a></div>
+                  
+                  <div class="col-md-2">
+                  
+                   <label style="visibility:hidden">fadfafa</label><br>
+                  <a href="{{route('footersetting.edit',1)}}" class="btn btn-primary" title="Change Footer Setting">Footer Setting</a></div>
                   </div>
                   <div class="form-group col-md-6">
                       <label for="phno">Enter Phone Number on status</label>
