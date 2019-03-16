@@ -1,11 +1,6 @@
 @extends('frontend.master', ['category_id' => $category_id])
 @section('main-content')
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="{{ route('home') }}">HOME</a></li>
-    <li class="breadcrumb-item active" aria-current="page">ABOUT</li>
-  </ol>
-</nav>
+
 
 @foreach ($abouts as $about)
     {{-- <div class="container-fluid abc">
