@@ -26,7 +26,7 @@
                         <div class="owl-carousel owl-theme" id="abcd">
                                 @foreach($cars as $car)
                                         <div class=""> 
-                                          <img src="{{ asset('storage/car/'.$car->image)}}" height="150px">
+                                          <img src="{{ asset('storage/car/'.$car->image)}}" height="250px" weight="300px">
                                               
                                                 <h3>{{ $car->name}}</h3>
                                                 <p>{{ $car->description }}</p>
@@ -161,7 +161,7 @@
                     items:2
                 },
                 1000:{
-                    items:4
+                    items:3
                 }
             }
         })    
