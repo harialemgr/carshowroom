@@ -1,50 +1,27 @@
 @extends('frontend.master', ['category_id' => $category_id])
 @section('main-content')
 
-<div class="container-fluid" style="background-color: white;">
+<div class="container-fluid" style="background-color:black;color:white">
     <div class="row" style="padding-top: 50px;">
         <div class="col-md-12 text-center">
-            <h1>BLOGS</h1>
+            <h1>CARS</h1>
         </div>
     </div>
     <div class="row">
-    @foreach ($blogs as $blog)
-        <div class="col-md-6">
-            <div class="card">
-                {{-- <img src="{{asset('assets/images/picture.jpg')}}" class="card-img-top"> --}}
-                {{-- <img src="{{asset('images/blog/'.$blog->images[0])}}" class="card-img-top"> --}}
-                @if ($blog->images[0] == 'noimage.jpg')
-                    <img src="https://bit.ly/2GDaN1I" class="card-img-top">
-                @else
-                    <img src="{{asset('images/blog/'.$blog->images[0])}}" class="card-img-top">
-                @endif
-                <div class="card-body">
-                    <a style="text-decoration:none; color: #E2821E; font-size: 20px;" href="/blogs/{{ $blog->slug }}" >{{ $blog->title }}</a>
-                    <p class="">{{  strip_tags(substr($blog->summary, 0 , 200)) }}...... <a href="/blogs/{{ $blog->slug }}"><small><u style="color: blue;">Read More</u></small></a> </p>
-                </div>
-            </div>
-        </div> 
-        <div class="clearfix"></div>   
-    @endforeach
+    <section class="banner-bottom-wthree py-5 px-4">
+            <div class="row banner-grids">
+                <div class="col-md-6 content-left-bottom text-left pr-lg-5">
+                    <h4>TRIPLE HAMBURGER WITH CHEESE MEAL</h4>
+                    <p class="mt-2 text-left">Integer pulvinar leo id viverra feugiat.Pellentesque libero justo, semper at tempus vel, ultrices in sed ligula. Nulla uter sollicitudin velit.Sed porttitor orci vel fermentum elit maximus. Curabitur ut turpis massa in condimentum libero. Pellentesque maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed porttitor orci vel ferm semper at vel, ultrices in ligula semper at vel.Curabitur ut turpis massa in condimentum libero.</p>
 
-         {{-- <div class="col-md-6">
-            <div class="card">
-                <img src="{{asset('assets/images/picture.jpg')}}" class="card-img-top">
-                <div class="card-body">
-                     <a style="text-decoration:none;" href="{{route('blogview')}}" ><p class="card-title">Prakash Sharma</p></a>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.sdfsdf s spodkfj;lsdjf sdf;ljksd;lkfsdl; sdf;lkdlfks;dfjpiisjdfk sjdkfjsklsdjflskdjfpsdj</p>
                 </div>
-            </div>
+                <div class="col-md-6 content-right-bottom text-right">
+                    <img src="{{asset('storage/car/black.jpg')}}" alt="news image" class="img-fluid">
+                </div>
+            
         </div>
-         <div class="col-md-6">
-            <div class="card">
-                <img src="{{asset('assets/images/picture.jpg')}}" class="card-img-top">
-                <div class="card-body">
-                     <a style="text-decoration:none;" href="{{route('blogview')}}" ><p class="card-title">Prakash Sharma</p></a>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.sdfsdf s spodkfj;lsdjf sdf;ljksd;lkfsdl; sdf;lkdlfks;dfjpiisjdfk sjdkfjsklsdjflskdjfpsdj</p>
-                </div>
-            </div>
-        </div> --}}
+    </section>
+
     </div>
 </div>
 @endsection

@@ -1,12 +1,25 @@
 @section('header')
 
+<style>
+#flex-item1{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size:12px;
+    text-align: right;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    text-transform:uppercase;
+}
+
+</style>
 <div class="flex-container1">
 
-  <span class="flex-item1" id="text" style="margin-top:0px  ">
+  <span id="flex-item1">
 
-  {{-- {{$adminprofile->status}}    --}}
-   speed & shine autozone pvt.ltd.          CALL NOW |
-  <!-- 7 DAYS A WEEK FROM 8:00 AM TO 9:00 AM -->
+   speed and shine autozone pvt.ltd. 
+ 
   </span>
   <span class="flex-item2" id="text1">
     &nbsp;{{$footer->phno}}   

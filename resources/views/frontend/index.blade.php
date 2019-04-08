@@ -5,7 +5,7 @@
 
 
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('storage/wallpaper/'.$adminprofile->topwallpaper)}}"></div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('storage/wallpaper/'.$adminprofile->topwallpaper)}}" style="margin-top:0px" ></div>
 
 <div class="container-fluid" style="margin:0px;padding:0px;background-color:black !important;">
         
@@ -39,7 +39,7 @@
 
 </div>
 
-
+ 
 <div class="container-fluid serve">
 <div class="container services">
   <div class="row">

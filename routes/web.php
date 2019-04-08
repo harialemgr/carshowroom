@@ -16,15 +16,10 @@ Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    //Route::get('createuser','Auth\RegisterController@showRegistrationForm');
     Route::resources([
-        // 'package' => 'PackageController',
-        // 'pcategory'=>'PcategoryController',
-        // 'pagecategory'=>'pageCategoryController',
         'page'=>'pageController',
         'slide'=> 'sliderController',
         'messages'=>'messageController',
-        // 'college'=>'collegeController',
         'seo'=>'seoController',
         'blogcategory' => 'BlogCategoryController',
         'blog' => 'blogController',
@@ -63,16 +58,10 @@ Route::post('/apply-for-vacancy/store', 'ApplyForVacancyController@store')->name
 // Route::get('/', 'HomeController@index')->name('home');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/about', 'HomeController@about')->name('about');
-Route::get('/prices', 'PagesController@price')->name('prices');
-Route::get('/ourteam', 'HomeController@ourteam')->name('ourteam');
-Route::get('/testimonials', 'HomeController@testimonials')->name('testimonials');
-Route::get('/careers', 'HomeController@careers')->name('careers');
-Route::get('/careershow', 'HomeController@careershow')->name('careershow');
 Route::get('/blogs', 'HomeController@blog')->name('blogs');
 Route::get('/blogview', 'HomeController@blogview')->name('blogview');
 Route::get('/readmore', 'HomeController@aboutus')->name('readmore');
 Route::get('/prices', 'PagesController@price')->name('prices');
-Route::get('/ourteam', 'HomeController@ourteam')->name('ourteam');
 Route::get('/testimonials', 'HomeController@testimonials')->name('testimonials');
 Route::get('/careers', 'HomeController@careers')->name('careers');
 Route::get('/careers/{slug}', 'HomeController@careershow')->name('career.show');

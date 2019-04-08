@@ -21,22 +21,25 @@
         padding-bottom:20px;
         font-weight:900;
       }
+.navbar{
+  background-color:darkred;
+}
 </style>
 @php $adminprofile = App\Http\Controllers\HomeController::getGeneralSetting() @endphp
 
  
-<nav class="navbar navbar-expand-sm bg-info navbar-light sticky-top">
+<nav class="navbar navbar-expand-sm navbar-light sticky-top">
                   <span>      
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-
+                  <img src="{{asset('storage/logo/logo.jpg')}}" height="70px" style="margin-left:25px">
                   <a class="navbar-brand" href="{{route('home')}}" id="l"> </a>
                   </span>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav  ml-auto" id="l1">
               
-                    <li class="nav-item dropdown  {{ request()->is('/') ? 'active1' : '' }}">
+                    <li class="nav-item dropdown">
                     <a href="{{route('home')}}" class="nav-link"  id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
                            HOME
                           </a>
@@ -45,15 +48,7 @@
                     <li class="nav-item {{ request()->is('about*') ? 'active1' : '' }}">
                     <a class="nav-link" href="{{ route('about') }}">ABOUT</a>
                     </li>
-                    {{-- <li class="nav-item {{ request()->is('prices*') ? 'active1' : '' }}">
-                      <a class="nav-link" href="{{route('prices')}}">PRICING</a>
-                    </li>
-                    <li class="nav-item {{ request()->is('testimonials*') ? 'active1' : '' }}">
-                      <a class="nav-link" href="{{route('testimonials')}}">TESTIMONIALS</a>
-                    </li>
-                    <li class="nav-item {{ request()->is('careers*') ? 'active1' : '' }}">
-                      <a class="nav-link" href="{{route('careers')}}">CAREER</a>
-                    </li> --}}
+                   
                     <li class="nav-item  {{ request()->is('blogs*') ? 'active1' : '' }}">
                       <a class="nav-link" href="{{route('blogs')}}">BLOG</a>
                     </li>
