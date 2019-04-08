@@ -49,8 +49,8 @@
                     <a class="nav-link" href="{{ route('about') }}">ABOUT</a>
                     </li>
                    
-                    <li class="nav-item  {{ request()->is('blogs*') ? 'active1' : '' }}">
-                      <a class="nav-link" href="{{route('blogs')}}">BLOG</a>
+                    <li class="nav-item  {{ request()->is('cars*') ? 'active1' : '' }}">
+                      <a class="nav-link" href="{{route('cars')}}">CARS</a>
                     </li>
                     <li class="nav-item  {{ request()->is('contact*') ? 'active1' : '' }}">
                       <a class="nav-link" href="#contact">CONTACT</a>
